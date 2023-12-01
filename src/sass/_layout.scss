@@ -13,3 +13,29 @@ body {
 	margin: 0 auto;
 	width: min(100%, 1200px);
 }
+
+//header
+
+.header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+
+		.logo {
+			display: flex;
+		}
+
+		.nav-desktop {
+			display: none;
+		}
+	}
+
+	.nav-mobile {
+		display: none;
+		position: absolute;
+	}
+}
