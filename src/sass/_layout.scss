@@ -31,6 +31,7 @@ body {
 		position: fixed;
 		width: 100%;
 		background-color: $pink;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 
 		.wrapper {
 			display: flex;
@@ -75,7 +76,6 @@ body {
 
 	&__image {
 		margin-top: 2em;
-		// background-color: green;
 
 		&-img {
 			width: 100%;
@@ -102,13 +102,14 @@ body {
 		}
 
 		&-cta {
-			margin: 1.5em 0;
+			margin: 2.5em 0;
 			padding: 0.8em 1.6em;
 			font-family: "Montserrat", sans-serif;
 			font-size: 1.5rem;
 			background-color: $cta-color;
 			border: none;
 			border-radius: 20px;
+			cursor: pointer;
 		}
 	}
 
