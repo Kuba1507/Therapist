@@ -28,6 +28,8 @@ body {
 	flex-direction: column;
 
 	.navbar {
+		position: fixed;
+		width: 100%;
 		background-color: $pink;
 
 		.wrapper {
@@ -63,6 +65,40 @@ body {
 			.nav-desktop {
 				display: none;
 			}
+		}
+	}
+
+	&__image,
+	&__text {
+		background-color: $light-blue;
+	}
+
+	&__image {
+		margin-top: 2em;
+		// background-color: green;
+
+		&-img {
+			width: 100%;
+		}
+	}
+
+	&__text {
+		text-align: center;
+
+		&-heading {
+			padding: 0 1em;
+			font-family: "Amatic SC", sans-serif;
+			font-size: 3.5rem;
+			font-weight: 400;
+			color: $dark-blue;
+		}
+
+		&-description {
+			margin-top: 1em;
+			padding: 0 2em;
+			font-family: "Andika", sans-serif;
+			font-size: 1.5rem;
+			color: $dark;
 		}
 	}
 
