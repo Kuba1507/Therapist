@@ -100,6 +100,16 @@ body {
 			font-size: 1.5rem;
 			color: $dark;
 		}
+
+		&-cta {
+			margin: 1.5em 0;
+			padding: 0.8em 1.6em;
+			font-family: "Montserrat", sans-serif;
+			font-size: 1.5rem;
+			background-color: $cta-color;
+			border: none;
+			border-radius: 20px;
+		}
 	}
 
 	.nav-mobile {
