@@ -16,6 +16,10 @@ body {
 	width: min(100%, 1200px);
 }
 
+.disable-scroll {
+	overflow-y: hidden;
+}
+
 // font-family: 'Amatic SC', sans-serif;
 // font-family: 'Andika', sans-serif;
 // font-family: 'Montserrat', sans-serif;
@@ -125,8 +129,8 @@ body {
 		width: 100%;
 		height: calc(100vh - 68px);
 		background-color: rgb(255, 201, 210);
-		transform: translateY(-800px);
-		transition: transform 0.5s;
+		transform: translateY(-1000px);
+		transition: transform 0.5s ease-out;
 
 		&__item {
 			padding: 2em 4em;
