@@ -45,6 +45,7 @@ body {
 				padding: 0.5em;
 				color: $black;
 				text-decoration: none;
+				z-index: 250;
 
 				&__icon {
 					width: 45px;
@@ -123,16 +124,21 @@ body {
 		place-items: center;
 		width: 100%;
 		height: calc(100vh - 68px);
-		background-color: $pink;
-		border-top: 1px solid black;
-		z-index: 100;
+		background-color: rgb(255, 201, 210);
+		transform: translateY(-800px);
+		transition: transform 0.5s;
 
 		&__item {
 			padding: 2em 4em;
 			font-family: "Andika", sans-serif;
-			font-size: 2.25rem;
+			font-size: 1.85rem;
 			color: $dark-blue;
 			text-decoration: none;
+			cursor: pointer;
 		}
+	}
+
+	.show-mobile {
+		transform: translateY(0);
 	}
 }
