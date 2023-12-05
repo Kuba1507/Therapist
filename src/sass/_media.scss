@@ -54,6 +54,28 @@
 			}
 		}
 	}
+
+	main {
+		.aboutme {
+			.waves {
+				height: 80px;
+			}
+
+			.wrapper {
+				.aboutme-box {
+					&__photo {
+						width: 210px;
+						height: 210px;
+					}
+
+					&__description {
+						padding: 2em 3.5em;
+						font-size: 1.8rem;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -105,6 +127,28 @@
 
 		.nav-mobile {
 			display: none;
+		}
+	}
+
+	main {
+		.aboutme {
+			.wrapper {
+				.aboutme-box {
+					flex-direction: row;
+					margin-top: 5em;
+					padding: 1.5em;
+
+					&__photo {
+						width: 260px;
+						height: 260px;
+					}
+
+					&__description {
+						padding: 0 2em 0 5em;
+						line-height: 2em;
+					}
+				}
+			}
 		}
 	}
 }
