@@ -53,3 +53,37 @@
 		}
 	}
 }
+
+@media (min-width: 992px) {
+	.header {
+		.navbar {
+			.wrapper {
+				.hamburger {
+					display: none;
+				}
+
+				.nav-desktop {
+					display: inline-block;
+				}
+			}
+		}
+
+		&__image {
+			margin-top: 5em;
+			&-img {
+				height: 400px;
+			}
+		}
+
+		&__text {
+			&-description {
+				padding: 0 15em;
+				line-height: 2em;
+			}
+		}
+
+		.nav-mobile {
+			display: none;
+		}
+	}
+}
