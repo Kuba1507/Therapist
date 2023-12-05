@@ -89,6 +89,7 @@ body {
 	}
 
 	&__text {
+		position: relative;
 		text-align: center;
 
 		&-heading {
@@ -97,14 +98,17 @@ body {
 			font-size: 3.5rem;
 			font-weight: 400;
 			color: $dark-blue;
+			z-index: 2;
 		}
 
 		&-description {
+			position: relative;
 			margin-top: 1em;
 			padding: 0 2em;
 			font-family: "Andika", sans-serif;
 			font-size: 1.5rem;
 			color: $dark;
+			z-index: 2;
 		}
 
 		&-cta {
@@ -116,6 +120,25 @@ body {
 			border: none;
 			border-radius: 20px;
 			cursor: pointer;
+		}
+
+		&-decoration {
+			display: none;
+			position: absolute;
+			width: 370px;
+			color: $pure-white;
+			opacity: 0.15;
+			z-index: 1;
+
+			&--first {
+				top: -5em;
+				left: 12em;
+			}
+
+			&--second {
+				bottom: 0;
+				right: 12em;
+			}
 		}
 	}
 
