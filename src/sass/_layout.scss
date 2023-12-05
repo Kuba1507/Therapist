@@ -125,7 +125,6 @@ body {
 		&-decoration {
 			display: none;
 			position: absolute;
-			width: 370px;
 			color: $pure-white;
 			opacity: 0.15;
 			z-index: 1;
@@ -133,9 +132,11 @@ body {
 			&--first {
 				top: -5em;
 				left: 12em;
+				width: 370px;
 			}
 
 			&--second {
+				width: 390px;
 				bottom: 0;
 				right: 12em;
 			}
