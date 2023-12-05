@@ -200,13 +200,15 @@ main {
 
 	.section-title {
 		font-family: "Amatic SC", sans-serif;
-		font-size: 4rem;
+		font-size: 5rem;
 		font-weight: 400;
 	}
 
 	.subsection-title {
 		font-family: "Andika", sans-serif;
 		font-size: 3rem;
+		font-weight: 400;
+		font-size: 2.5rem;
 	}
 
 	.aboutme {
@@ -225,7 +227,7 @@ main {
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
-				margin-top: 2.5em;
+				margin: 2.5em 0 2.5em 0;
 
 				&__photo {
 					width: 190px;
