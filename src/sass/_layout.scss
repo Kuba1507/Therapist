@@ -99,7 +99,6 @@ body {
 	}
 
 	&__text {
-		position: relative;
 		text-align: center;
 
 		&-heading {
@@ -173,6 +172,7 @@ body {
 		background-color: rgb(255, 201, 210);
 		transform: translateY(-1000px);
 		transition: transform 0.5s ease-out;
+		z-index: 100;
 
 		&__item {
 			padding: 2em 4em;
@@ -192,17 +192,27 @@ body {
 //main
 
 main {
-	// .section {
-	// 	// padding: 2em 4em;
-	// }
+	.subsection-title {
+		font-family: "Amatic SC", sans-serif;
+		font-size: 4rem;
+		font-weight: 400;
+		text-align: center;
+	}
 
 	.aboutme {
 		position: relative;
 		background-color: $light-yellow;
 
 		.waves {
+			margin-bottom: 2em;
 			width: 100%;
 			height: 50px;
+		}
+
+		.wrapper {
+			.aboutme-box {
+				
+			}
 		}
 	}
 }
