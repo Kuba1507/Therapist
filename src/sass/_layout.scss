@@ -128,8 +128,16 @@ body {
 			font-size: 1.5rem;
 			background-color: $cta-color;
 			border: none;
+			border: 1px solid black;
 			border-radius: 20px;
+			transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 			cursor: pointer;
+
+			&:hover {
+				background-color: $dark;
+				color: $cta-color;
+				border-color: $cta-color;
+			}
 		}
 
 		&-decoration {
@@ -178,5 +186,23 @@ body {
 
 	.show-mobile {
 		transform: translateY(0);
+	}
+}
+
+//main
+
+main {
+	// .section {
+	// 	// padding: 2em 4em;
+	// }
+
+	.aboutme {
+		position: relative;
+		background-color: $light-yellow;
+
+		.waves {
+			width: 100%;
+			height: 50px;
+		}
 	}
 }
