@@ -32,6 +32,7 @@ body {
 		width: 100%;
 		background-color: $pink;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+		z-index: 250;
 
 		.wrapper {
 			display: flex;
@@ -114,10 +115,24 @@ body {
 	}
 
 	.nav-mobile {
-		// display: none;
 		position: absolute;
+		top: 68px;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4, 1fr);
+		place-items: center;
 		width: 100%;
-		height: 100vh;
-		background-color: yellow;
+		height: calc(100vh - 68px);
+		background-color: $pink;
+		border-top: 1px solid black;
+		z-index: 100;
+
+		&__item {
+			padding: 2em 4em;
+			font-family: "Andika", sans-serif;
+			font-size: 2.25rem;
+			color: $dark-blue;
+			text-decoration: none;
+		}
 	}
 }
