@@ -211,7 +211,24 @@ main {
 
 		.wrapper {
 			.aboutme-box {
-				
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				margin-top: 2.5em;
+
+				&__photo {
+					width: 190px;
+					height: 190px;
+					border-radius: 50%;
+				}
+
+				&__description {
+					padding: 1.5em 2.5em;
+					font-family: "Andika", sans-serif;
+					font-size: 1.7rem;
+					text-align: center;
+				}
 			}
 		}
 	}
