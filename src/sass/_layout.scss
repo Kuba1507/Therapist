@@ -193,11 +193,20 @@ body {
 //main
 
 main {
+	.section-title,
 	.subsection-title {
+		text-align: center;
+	}
+
+	.section-title {
 		font-family: "Amatic SC", sans-serif;
 		font-size: 4rem;
 		font-weight: 400;
-		text-align: center;
+	}
+
+	.subsection-title {
+		font-family: "Andika", sans-serif;
+		font-size: 3rem;
 	}
 
 	.aboutme {
