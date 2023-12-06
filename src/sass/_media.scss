@@ -224,6 +224,8 @@
 					align-items: flex-start;
 
 					&__offer {
+						height: 535px;
+						align-self: stretch;
 						margin: 2em 0;
 
 						&-title {
