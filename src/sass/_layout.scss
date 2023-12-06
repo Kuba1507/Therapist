@@ -211,15 +211,26 @@ main {
 		font-size: 2.5rem;
 	}
 
+	.waves,
+	.waves-bottom {
+		width: 100%;
+		height: 50px;
+	}
+
+	.waves {
+		margin-bottom: 2em;
+	}
+
+	.waves-bottom {
+		position: absolute;
+		margin-top: 3em;
+		bottom: 0;
+		rotate: 180deg;
+	}
+
 	.aboutme {
 		position: relative;
 		background-color: $light-yellow;
-
-		.waves {
-			margin-bottom: 2em;
-			width: 100%;
-			height: 50px;
-		}
 
 		.wrapper {
 			.aboutme-box {
@@ -261,6 +272,10 @@ main {
 					justify-content: center;
 					align-items: center;
 
+					&--last {
+						margin-bottom: 6em;
+					}
+
 					&-logo {
 						width: 150px;
 						height: 150px;
@@ -279,6 +294,15 @@ main {
 					display: none;
 				}
 			}
+		}
+	}
+
+	.offers {
+		position: relative;
+		background-color: $pink;
+
+		.section-title {
+			padding-top: 1em;
 		}
 	}
 }
