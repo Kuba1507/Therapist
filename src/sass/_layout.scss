@@ -241,9 +241,14 @@ main {
 					font-size: 1.7rem;
 					text-align: center;
 				}
+
+				&__decoration {
+					display: none;
+				}
 			}
 
 			.certificates-box {
+				position: relative;
 				display: grid;
 				grid-template-columns: 1fr;
 				grid-template-rows: repeat(6, 1fr);
@@ -268,6 +273,10 @@ main {
 						color: #424242;
 						text-align: center;
 					}
+				}
+
+				&__decoration {
+					display: none;
 				}
 			}
 		}

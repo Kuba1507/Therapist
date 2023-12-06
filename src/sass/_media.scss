@@ -146,6 +146,7 @@
 		.aboutme {
 			.wrapper {
 				.aboutme-box {
+					position: relative;
 					flex-direction: row;
 					margin-top: 5em;
 					padding: 1.5em;
@@ -158,6 +159,28 @@
 					&__description {
 						padding: 0 2em 0 5em;
 						line-height: 2em;
+					}
+
+					&__decoration {
+						display: block;
+						position: absolute;
+						top: -8em;
+						right: -5em;
+						width: 500px;
+						rotate: 30deg;
+						opacity: 0.02;
+					}
+				}
+
+				.certificates-box {
+					&__decoration {
+						display: block;
+						position: absolute;
+						left: -5em;
+						bottom: 2;
+						width: 600px;
+						opacity: 0.02;
+						transform: rotate(15deg);
 					}
 				}
 			}
