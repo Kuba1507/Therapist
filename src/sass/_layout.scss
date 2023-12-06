@@ -304,5 +304,32 @@ main {
 		.section-title {
 			padding-top: 1em;
 		}
+
+		.wrapper {
+			.offers-box {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: repeat(3, 1fr);
+				place-items: center;
+
+				&__offer {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					margin: 2.5em 2em 1.5em 2em;
+
+					&-photo {
+						width: 80%;
+						height: auto;
+						border-radius: 10px;
+					}
+
+					&-title {
+						align-self: flex-start;
+					}
+				}
+			}
+		}
 	}
 }
