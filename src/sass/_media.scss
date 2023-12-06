@@ -61,6 +61,10 @@
 				height: 80px;
 			}
 
+			.waves-bottom {
+				height: 80px;
+			}
+
 			.wrapper {
 				.aboutme-box {
 					&__photo {
@@ -80,6 +84,7 @@
 					place-items: center;
 					gap: 0;
 					padding: 1.5em;
+					padding-bottom: 8em;
 
 					&__certificate {
 						margin: 1.25em 0;
@@ -205,6 +210,29 @@
 						width: 600px;
 						opacity: 0.02;
 						transform: rotate(15deg);
+					}
+				}
+			}
+		}
+
+		.offers {
+			.wrapper {
+				.offers-box {
+					margin-top: 4em;
+					grid-template-columns: repeat(3, 1fr);
+					grid-template-rows: 1fr;
+					align-items: flex-start;
+
+					&__offer {
+						margin: 2em 0;
+
+						&-title {
+							font-size: 2.2rem;
+						}
+
+						&-description {
+							font-size: 1.6rem;
+						}
 					}
 				}
 			}
