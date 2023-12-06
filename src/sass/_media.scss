@@ -73,6 +73,18 @@
 						font-size: 1.8rem;
 					}
 				}
+
+				.certificates-box {
+					grid-template-columns: repeat(3, 1fr);
+					grid-template-rows: repeat(2, 1fr);
+					place-items: center;
+					gap: 0;
+					padding: 1.5em;
+
+					&__certificate {
+						margin: 1.25em 0;
+					}
+				}
 			}
 		}
 	}

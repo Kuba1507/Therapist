@@ -227,7 +227,7 @@ main {
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
-				margin: 2.5em 0 2.5em 0;
+				margin: 2.5em 0 3.5em 0;
 
 				&__photo {
 					width: 190px;
@@ -248,12 +248,26 @@ main {
 				grid-template-columns: 1fr;
 				grid-template-rows: repeat(6, 1fr);
 				gap: 20px;
+				margin-top: 2em;
 
 				&__certificate {
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
 					align-items: center;
+
+					&-logo {
+						width: 150px;
+						height: 150px;
+					}
+
+					&-name {
+						margin: 0.25em 0 0.75em 0;
+						font-family: "Andika", sans-serif;
+						font-size: 1.8rem;
+						color: #424242;
+						text-align: center;
+					}
 				}
 			}
 		}
