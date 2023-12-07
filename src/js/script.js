@@ -1,6 +1,7 @@
 const body = document.querySelector("body");
 const burgerBtn = document.querySelector(".hamburger");
 const mobileNav = document.querySelector(".nav-mobile");
+const mobileNavItems = document.querySelectorAll(".nav-mobile__item");
 const headerImg = document.querySelector(".header__image-img");
 
 const handleNav = () => {
@@ -18,5 +19,8 @@ const changeImage = () => {
 };
 
 burgerBtn.addEventListener("click", handleNav);
+mobileNavItems.forEach((item) => {
+	item.addEventListener("click", handleNav);
+});
 window.onload = changeImage;
 window.onresize = changeImage;
