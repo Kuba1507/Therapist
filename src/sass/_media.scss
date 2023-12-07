@@ -114,6 +114,27 @@
 						}
 					}
 				}
+
+				.problems-box {
+					padding: 2em;
+
+					&__text {
+						&-title {
+							font-size: 2.5rem;
+						}
+
+						ul {
+							li {
+								margin-left: 1.5em;
+								font-size: 1.8rem;
+							}
+						}
+					}
+
+					&__img {
+						width: 70%;
+					}
+				}
 			}
 		}
 	}
@@ -235,6 +256,20 @@
 						&-description {
 							font-size: 1.6rem;
 						}
+					}
+				}
+
+				.problems-box {
+					margin-top: 4em;
+					flex-direction: row;
+
+					&__text {
+						margin-right: 3em;
+					}
+
+					&__img {
+						margin-left: 3em;
+						width: 40%;
 					}
 				}
 			}
