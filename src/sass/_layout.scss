@@ -390,4 +390,54 @@ main {
 			}
 		}
 	}
+
+	.parents {
+		background-color: $light-blue;
+
+		.section-title {
+			padding-top: 1em;
+		}
+
+		.wrapper {
+			.parents-box {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				&__block {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					margin: 2em 0;
+					padding: 1em 2em;
+
+					&-text {
+						font-family: "Montserrat", sans-serif;
+
+						&-title {
+							font-size: 1.9rem;
+							font-weight: bold;
+						}
+
+						&-description {
+							margin-top: 0.5em;
+							line-height: 1.25em;
+						}
+
+						&-read-more {
+							margin-top: 0.5em;
+							font-weight: bold;
+							text-decoration: underline;
+						}
+					}
+
+					&-image {
+						margin-top: 2.5em;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
 }
