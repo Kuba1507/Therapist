@@ -359,6 +359,35 @@ main {
 					}
 				}
 			}
+
+			.problems-box {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding: 3em;
+
+				&__text {
+					&-title {
+						font-family: "Montserrat", sans-serif;
+						font-size: 2rem;
+						font-weight: bold;
+					}
+
+					ul {
+						font-family: "Montserrat", sans-serif;
+
+						li {
+							margin-top: 0.75em;
+						}
+					}
+				}
+
+				&__img {
+					margin-top: 1.5em;
+					width: 90%;
+				}
+			}
 		}
 	}
 }
